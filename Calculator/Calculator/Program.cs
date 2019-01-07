@@ -31,25 +31,49 @@ namespace Calculator
 
             if(op.Equals("+"))
             {
-                Console.WriteLine(num_1 + num_2);
+                Addition(num_1, num_2);
             }
 
             if (op.Equals("-"))
             {
-                Console.WriteLine(num_1 - num_2);
+                Subtraction(num_1, num_2);
             }
 
             if (op.Equals("*"))
             {
-                Console.WriteLine(num_1 * num_2);
+                Multiplication(num_1, num_2);
             }
 
             if (op.Equals("/"))
             {
-                Console.WriteLine(num_1 / num_2);
+                Division(num_1, num_2);
             }
 
             Console.ReadLine();
+        }
+
+        static void Addition(int one, int two)
+        {
+            Console.WriteLine("Answer ");
+            Console.WriteLine(one + two);
+        }
+
+        static void Subtraction(int one, int two)
+        {
+            Console.WriteLine("Answer ");
+            Console.WriteLine(one + two);
+        }
+
+        static void Multiplication(int one, int two)
+        {
+            Console.WriteLine("Answer ");
+            Console.WriteLine(one * two);
+        }
+
+        static void Division(int one, int two)
+        {
+            Console.WriteLine("Answer ");
+            Console.WriteLine(one / two);
         }
     }
 }
